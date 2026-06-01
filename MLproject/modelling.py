@@ -5,9 +5,6 @@ from sklearn.model_selection import train_test_split
 import random
 import numpy as np
 
-# Create a new MLflow Experiment
-mlflow.set_experiment("Dropout Students")
-
 data = pd.read_csv("clean_data.csv")
 
 X_train, X_test, y_train, y_test = train_test_split(
